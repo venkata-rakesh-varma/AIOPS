@@ -1,0 +1,15 @@
+{
+  "generator_version": "1.0.0",
+  "global_seed": 42,
+  "num_scenarios": 100,
+  "elapsed_seconds": 32.33,
+  "counts": {
+    "metrics": 483531,
+    "logs": 96189,
+    "traces": 25036,
+    "alerts": 1456,
+    "incidents": 95,
+    "nodes": 2827,
+    "edges": 5086
+  }
+}

@@ -1,0 +1,131 @@
+scenario_id,alert_id,timestamp,alert_type,source_node,service_name,severity,metric,observed_value,threshold,alert_message
+scen_000002,alt_scen_000002_00001,2026-09-01T00:00:33Z,TransientSpikeWarning,node_08,mesh_svc_8,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000002,alt_scen_000002_00002,2026-09-01T00:07:04Z,TransientSpikeWarning,node_13,mesh_svc_13,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000006,alt_scen_000006_00003,2026-09-01T00:01:09Z,TransientSpikeWarning,node_18,mesh_svc_18,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000006,alt_scen_000006_00002,2026-09-01T00:05:12Z,TransientSpikeWarning,node_12,mesh_svc_12,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000006,alt_scen_000006_00001,2026-09-01T00:09:03Z,TransientSpikeWarning,node_12,mesh_svc_12,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000006,alt_scen_000006_00005,2026-09-01T00:14:42Z,TransientSpikeWarning,node_08,mesh_svc_8,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000006,alt_scen_000006_00006,2026-09-01T00:15:56Z,TransientSpikeWarning,node_17,mesh_svc_17,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000006,alt_scen_000006_00004,2026-09-01T00:16:18Z,TransientSpikeWarning,node_06,mesh_svc_6,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000008,alt_scen_000008_00033,2026-09-01T00:04:32Z,TransientSpikeWarning,order_01,order_service,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000008,alt_scen_000008_00002,2026-09-01T00:07:06.642400Z,DbConnectionPoolSaturated,ecom_aux_7,user_service_7,warning,connection_pool_usage,95.43,90.0,DUPLICATE: Database connection pool saturated
+scen_000008,alt_scen_000008_00001,2026-09-01T00:07:10Z,DbConnectionPoolSaturated,ecom_aux_7,user_service_7,warning,connection_pool_usage,95.43,90.0,Database connection pool saturated
+scen_000008,alt_scen_000008_00003,2026-09-01T00:07:50Z,DbConnectionPoolSaturated,ecom_aux_7,user_service_7,warning,connection_pool_usage,96.43,90.0,Database connection pool saturated
+scen_000008,alt_scen_000008_00004,2026-09-01T00:08:00Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,35.4,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00005,2026-09-01T00:08:00Z,DbConnectionPoolSaturated,ecom_aux_7,user_service_7,warning,connection_pool_usage,98.45,90.0,Database connection pool saturated
+scen_000008,alt_scen_000008_00006,2026-09-01T00:08:20Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,29.01,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00007,2026-09-01T00:09:10Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,27.9,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00008,2026-09-01T00:09:20Z,DbConnectionPoolSaturated,ecom_aux_7,user_service_7,warning,connection_pool_usage,95.74,90.0,Database connection pool saturated
+scen_000008,alt_scen_000008_00035,2026-09-01T00:09:45Z,TransientSpikeWarning,auth_01,auth_service,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000008,alt_scen_000008_00009,2026-09-01T00:09:50Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,43.98,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00010,2026-09-01T00:10:10Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,37.28,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00011,2026-09-01T00:10:20Z,DbConnectionPoolSaturated,ecom_aux_7,user_service_7,warning,connection_pool_usage,96.87,90.0,Database connection pool saturated
+scen_000008,alt_scen_000008_00012,2026-09-01T00:10:30Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,39.67,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00013,2026-09-01T00:10:30Z,DbConnectionPoolSaturated,ecom_aux_7,user_service_7,warning,connection_pool_usage,95.12,90.0,Database connection pool saturated
+scen_000008,alt_scen_000008_00014,2026-09-01T00:11:20Z,DbConnectionPoolSaturated,ecom_aux_7,user_service_7,warning,connection_pool_usage,98.67,90.0,Database connection pool saturated
+scen_000008,alt_scen_000008_00015,2026-09-01T00:12:10Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,44.23,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00016,2026-09-01T00:12:30Z,DbConnectionPoolSaturated,ecom_aux_7,user_service_7,warning,connection_pool_usage,99.09,90.0,Database connection pool saturated
+scen_000008,alt_scen_000008_00018,2026-09-01T00:13:06.140231Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,32.97,10.0,DUPLICATE: Error rate threshold exceeded
+scen_000008,alt_scen_000008_00017,2026-09-01T00:13:10Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,32.97,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00019,2026-09-01T00:13:40Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,32.63,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00020,2026-09-01T00:14:30Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,26.67,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00022,2026-09-01T00:14:35.773950Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,21.71,10.0,DUPLICATE: Error rate threshold exceeded
+scen_000008,alt_scen_000008_00021,2026-09-01T00:14:40Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,21.71,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00023,2026-09-01T00:14:50Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,25.16,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00024,2026-09-01T00:15:20Z,DbConnectionPoolSaturated,ecom_aux_7,user_service_7,warning,connection_pool_usage,95.77,90.0,Database connection pool saturated
+scen_000008,alt_scen_000008_00025,2026-09-01T00:15:40Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,25.87,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00026,2026-09-01T00:15:40Z,DbConnectionPoolSaturated,ecom_aux_7,user_service_7,warning,connection_pool_usage,97.33,90.0,Database connection pool saturated
+scen_000008,alt_scen_000008_00034,2026-09-01T00:16:05Z,TransientSpikeWarning,ecom_aux_1,user_service_1,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000008,alt_scen_000008_00027,2026-09-01T00:16:10Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,26.49,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00028,2026-09-01T00:16:30Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,24.31,10.0,Error rate threshold exceeded
+scen_000008,alt_scen_000008_00029,2026-09-01T00:16:30Z,DbConnectionPoolSaturated,ecom_aux_7,user_service_7,warning,connection_pool_usage,99.0,90.0,Database connection pool saturated
+scen_000008,alt_scen_000008_00030,2026-09-01T00:16:34.150217Z,DbConnectionPoolSaturated,ecom_aux_7,user_service_7,warning,connection_pool_usage,99.0,90.0,DUPLICATE: Database connection pool saturated
+scen_000008,alt_scen_000008_00031,2026-09-01T00:16:40Z,DbConnectionPoolSaturated,ecom_aux_7,user_service_7,warning,connection_pool_usage,96.99,90.0,Database connection pool saturated
+scen_000008,alt_scen_000008_00032,2026-09-01T00:16:50Z,ErrorRateElevated,ecom_aux_7,user_service_7,critical,error_rate_percent,23.87,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00067,2026-09-01T00:02:59Z,TransientSpikeWarning,node_09,mesh_svc_9,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000041,alt_scen_000041_00001,2026-09-01T00:05:10Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,97.63,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00002,2026-09-01T00:05:30Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,39.87,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00069,2026-09-01T00:06:15Z,TransientSpikeWarning,node_05,mesh_svc_5,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000041,alt_scen_000041_00003,2026-09-01T00:07:00Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,96.57,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00004,2026-09-01T00:07:02.970188Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,96.57,90.0,DUPLICATE: Database connection pool saturated
+scen_000041,alt_scen_000041_00005,2026-09-01T00:07:10Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,38.52,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00006,2026-09-01T00:08:00Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,99.69,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00007,2026-09-01T00:08:10Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,98.95,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00009,2026-09-01T00:08:16.064640Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,36.46,10.0,DUPLICATE: Error rate threshold exceeded
+scen_000041,alt_scen_000041_00008,2026-09-01T00:08:20Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,36.46,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00010,2026-09-01T00:08:30Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,99.48,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00011,2026-09-01T00:08:50Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,38.93,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00012,2026-09-01T00:08:50Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,95.8,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00068,2026-09-01T00:09:20Z,TransientSpikeWarning,node_00,mesh_svc_0,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000041,alt_scen_000041_00013,2026-09-01T00:09:50Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,23.36,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00014,2026-09-01T00:10:10Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,23.59,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00015,2026-09-01T00:10:20Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,95.63,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00016,2026-09-01T00:11:10Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,39.1,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00017,2026-09-01T00:11:20Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,99.96,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00018,2026-09-01T00:11:30Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,27.45,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00019,2026-09-01T00:11:40Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,96.31,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00020,2026-09-01T00:11:50Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,99.07,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00021,2026-09-01T00:12:00Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,99.87,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00022,2026-09-01T00:12:04.280613Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,99.87,90.0,DUPLICATE: Database connection pool saturated
+scen_000041,alt_scen_000041_00023,2026-09-01T00:12:10Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,99.14,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00024,2026-09-01T00:12:40Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,22.43,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00025,2026-09-01T00:12:40Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,98.83,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00026,2026-09-01T00:13:20Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,22.3,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00027,2026-09-01T00:13:30Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,96.94,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00028,2026-09-01T00:14:10Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,23.5,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00029,2026-09-01T00:14:20Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,98.01,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00030,2026-09-01T00:14:40Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,22.08,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00031,2026-09-01T00:14:50Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,97.98,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00032,2026-09-01T00:15:00Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,99.29,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00033,2026-09-01T00:15:10Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,96.25,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00034,2026-09-01T00:15:20Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,20.17,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00035,2026-09-01T00:15:24.010711Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,20.17,10.0,DUPLICATE: Error rate threshold exceeded
+scen_000041,alt_scen_000041_00070,2026-09-01T00:15:39Z,TransientSpikeWarning,node_05,mesh_svc_5,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000041,alt_scen_000041_00036,2026-09-01T00:15:40Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,36.78,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00037,2026-09-01T00:15:50Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,37.69,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00038,2026-09-01T00:16:10Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,95.05,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00039,2026-09-01T00:16:13.589037Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,95.05,90.0,DUPLICATE: Database connection pool saturated
+scen_000041,alt_scen_000041_00040,2026-09-01T00:16:20Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,98.16,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00041,2026-09-01T00:16:40Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,99.53,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00042,2026-09-01T00:17:10Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,38.23,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00043,2026-09-01T00:17:10Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,96.08,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00044,2026-09-01T00:17:30Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,37.31,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00045,2026-09-01T00:17:30Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,98.02,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00047,2026-09-01T00:17:46.001907Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,99.32,90.0,DUPLICATE: Database connection pool saturated
+scen_000041,alt_scen_000041_00046,2026-09-01T00:17:50Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,99.32,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00048,2026-09-01T00:18:20Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,22.4,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00049,2026-09-01T00:18:20Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,95.09,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00050,2026-09-01T00:18:30Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,98.73,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00051,2026-09-01T00:18:40Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,96.51,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00052,2026-09-01T00:18:50Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,99.88,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00053,2026-09-01T00:19:20Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,40.76,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00054,2026-09-01T00:19:30Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,95.31,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00055,2026-09-01T00:20:00Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,97.84,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00056,2026-09-01T00:20:10Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,28.28,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00057,2026-09-01T00:20:10Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,98.75,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00058,2026-09-01T00:21:00Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,38.65,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00059,2026-09-01T00:21:10Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,95.31,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00060,2026-09-01T00:21:40Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,97.17,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00061,2026-09-01T00:22:10Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,95.35,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00062,2026-09-01T00:22:40Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,98.77,90.0,Database connection pool saturated
+scen_000041,alt_scen_000041_00063,2026-09-01T00:23:00Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,35.75,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00064,2026-09-01T00:23:10Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,41.78,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00065,2026-09-01T00:23:50Z,ErrorRateElevated,node_02,mesh_svc_2,critical,error_rate_percent,20.13,10.0,Error rate threshold exceeded
+scen_000041,alt_scen_000041_00066,2026-09-01T00:24:00Z,DbConnectionPoolSaturated,node_02,mesh_svc_2,warning,connection_pool_usage,97.27,90.0,Database connection pool saturated
+scen_000053,alt_scen_000053_00001,2026-09-01T00:01:16Z,TransientSpikeWarning,sub_svc_4,sub_service_4,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000053,alt_scen_000053_00002,2026-09-01T00:06:52Z,TransientSpikeWarning,db_01,postgresql,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000053,alt_scen_000053_00005,2026-09-01T00:07:13Z,TransientSpikeWarning,sub_svc_5,sub_service_5,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000053,alt_scen_000053_00006,2026-09-01T00:07:33Z,TransientSpikeWarning,sub_svc_10,sub_service_10,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000053,alt_scen_000053_00003,2026-09-01T00:10:59Z,TransientSpikeWarning,sub_svc_6,sub_service_6,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000053,alt_scen_000053_00004,2026-09-01T00:13:42Z,TransientSpikeWarning,lb_01,load_balancer,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000066,alt_scen_000066_00001,2026-09-01T00:05:52Z,TransientSpikeWarning,node_07,mesh_svc_7,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000066,alt_scen_000066_00002,2026-09-01T00:15:58Z,TransientSpikeWarning,node_00,mesh_svc_0,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000074,alt_scen_000074_00004,2026-09-01T00:03:35Z,TransientSpikeWarning,consumer_25,kafka_consumer_25,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000074,alt_scen_000074_00001,2026-09-01T00:05:49Z,TransientSpikeWarning,notif_01,notification_service,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000074,alt_scen_000074_00002,2026-09-01T00:13:39Z,TransientSpikeWarning,consumer_5,kafka_consumer_5,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000074,alt_scen_000074_00003,2026-09-01T00:15:14Z,TransientSpikeWarning,consumer_2,kafka_consumer_2,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000086,alt_scen_000086_00001,2026-09-01T00:02:27Z,TransientSpikeWarning,ecom_aux_7,user_service_7,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000086,alt_scen_000086_00002,2026-09-01T00:07:11Z,TransientSpikeWarning,order_01,order_service,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000086,alt_scen_000086_00005,2026-09-01T00:09:41Z,TransientSpikeWarning,inv_01,inventory_service,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000086,alt_scen_000086_00003,2026-09-01T00:10:24Z,TransientSpikeWarning,db_master,postgresql,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
+scen_000086,alt_scen_000086_00004,2026-09-01T00:12:12Z,TransientSpikeWarning,ecom_aux_7,user_service_7,warning,cpu_usage_percent,78.5,75.0,Transient CPU spike detected on idle node
