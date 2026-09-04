@@ -1,0 +1,82 @@
+random_seed: 42
+num_scenarios: 1000
+train_ratio: 0.70
+validation_ratio: 0.15
+test_ratio: 0.15
+
+topology:
+  min_services: 8
+  max_services: 50
+  topology_families:
+    - "topology_a_3tier"
+    - "topology_b_ecommerce"
+    - "topology_c_caching_search"
+    - "topology_d_kafka_event"
+    - "topology_e_mesh"
+
+telemetry:
+  metric_interval_seconds: 10
+  time_window_minutes: 30
+  missing_metric_probability: 0.05
+  missing_log_probability: 0.03
+  missing_trace_probability: 0.05
+  missing_alert_probability: 0.02
+  delayed_telemetry_probability: 0.05
+  noise_level: 0.10
+
+incident:
+  incident_probability: 0.85
+  multi_incident_probability: 0.20
+  hard_negative_probability: 0.40
+
+hard_test:
+  unseen_topology_family: "topology_e_mesh"
+  noise_multiplier: 1.8
+  missingness_multiplier: 2.0
+  overlap_probability: 0.45
+
+alert_thresholds:
+  cpu_percent_warn: 75.0
+  cpu_percent_critical: 90.0
+  memory_percent_warn: 80.0
+  memory_percent_critical: 92.0
+  disk_percent_warn: 85.0
+  disk_percent_critical: 95.0
+  latency_ms_warn: 300.0
+  latency_ms_critical: 1000.0
+  error_rate_warn: 5.0
+  error_rate_critical: 20.0
+  kafka_lag_warn: 1000
+  kafka_lag_critical: 5000
+  db_connections_warn: 80.0
+  db_connections_critical: 95.0
+
+root_causes:
+  - cpu_saturation
+  - memory_exhaustion
+  - disk_exhaustion
+  - network_latency
+  - packet_loss
+  - database_connection_exhaustion
+  - database_slow_queries
+  - database_outage
+  - redis_failure
+  - kafka_broker_failure
+  - message_queue_backlog
+  - service_crash
+  - container_restart_loop
+  - kubernetes_pod_failure
+  - kubernetes_node_failure
+  - deployment_bug
+  - configuration_error
+  - authentication_failure
+  - dns_failure
+  - load_balancer_failure
+  - api_rate_limiting
+  - dependency_timeout
+  - memory_leak
+  - traffic_spike
+  - deadlock
+  - storage_failure
+  - certificate_expiration
+  - external_api_failure
