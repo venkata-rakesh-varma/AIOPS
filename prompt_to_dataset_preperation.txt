@@ -1,0 +1,1007 @@
+You are a senior ML engineer, data engineer, SRE/AIOps engineer, and synthetic-data generation expert.
+
+I am building an academic/research project called:
+
+"AIOps Incident Correlation & Self-Healing Infrastructure Bot"
+
+The ML system must learn to:
+1. Detect infrastructure anomalies.
+2. Correlate multiple alerts/logs/metrics belonging to the same incident.
+3. Identify the root cause of an incident.
+4. Predict the failure propagation path through service dependencies.
+5. Recommend a remediation action.
+6. Eventually support graph-based Root Cause Analysis using a dependency graph.
+
+I need you to create a COMPLETE Python-based synthetic dataset generation project.
+
+IMPORTANT:
+The dataset must be designed for MACHINE LEARNING.
+Do NOT generate simple repetitive random rows.
+Do NOT make the target label directly derivable from one obvious feature.
+The generated data must contain causal relationships, noise, temporal relationships, dependency relationships, and unseen combinations.
+
+==================================================
+1. TECHNOLOGY STACK
+==================================================
+
+Use:
+
+- Python 3.11+
+- NumPy
+- Pandas
+- NetworkX
+- Faker
+- PyArrow
+- JSON
+- YAML
+- pathlib
+- dataclasses
+- logging
+- multiprocessing where useful
+- random/secrets where appropriate
+
+Do NOT require an LLM API for the core dataset generation.
+
+The entire dataset must be reproducible using a random seed.
+
+Use configuration files instead of hardcoding dataset parameters.
+
+==================================================
+2. PROJECT STRUCTURE
+==================================================
+
+Generate the following project:
+
+aiops_dataset_generator/
+│
+├── config/
+│   └── config.yaml
+│
+├── generators/
+│   ├── __init__.py
+│   ├── topology_generator.py
+│   ├── service_generator.py
+│   ├── infrastructure_generator.py
+│   ├── metric_generator.py
+│   ├── log_generator.py
+│   ├── trace_generator.py
+│   ├── incident_generator.py
+│   ├── failure_propagation.py
+│   ├── alert_generator.py
+│   ├── remediation_generator.py
+│   └── scenario_generator.py
+│
+├── graph/
+│   ├── __init__.py
+│   ├── dependency_graph.py
+│   └── graph_exporter.py
+│
+├── pipeline/
+│   ├── __init__.py
+│   ├── dataset_builder.py
+│   ├── dataset_splitter.py
+│   └── dataset_validator.py
+│
+├── utils/
+│   ├── __init__.py
+│   ├── random_utils.py
+│   ├── time_utils.py
+│   └── io_utils.py
+│
+├── generate_dataset.py
+├── validate_dataset.py
+├── requirements.txt
+└── README.md
+
+Every file must contain complete working code.
+Do not give pseudocode.
+Do not leave TODOs.
+Do not use placeholder functions.
+
+==================================================
+3. INFRASTRUCTURE TOPOLOGY
+==================================================
+
+Generate realistic cloud infrastructure topologies using NetworkX.
+
+The graph must contain nodes such as:
+
+- API Gateway
+- Load Balancer
+- Web Service
+- Authentication Service
+- User Service
+- Order Service
+- Payment Service
+- Inventory Service
+- Notification Service
+- Recommendation Service
+- PostgreSQL
+- MySQL
+- Redis
+- MongoDB
+- Kafka
+- RabbitMQ
+- Elasticsearch
+- Object Storage
+- Kubernetes nodes
+- Containers
+- VM instances
+
+Each node should have attributes such as:
+
+- node_id
+- node_type
+- service_name
+- environment
+- region
+- zone
+- host_id
+- container_id
+- version
+- cpu_capacity
+- memory_capacity
+- replica_count
+- criticality
+
+Generate dependency edges such as:
+
+API → Auth
+API → Order
+Order → Payment
+Order → Inventory
+Payment → Database
+Order → Kafka
+Kafka → Notification
+etc.
+
+Do NOT always use the same topology.
+
+Generate multiple topology families.
+
+For example:
+
+Topology A:
+API → Auth → DB
+
+Topology B:
+API → Order → Payment → DB
+
+Topology C:
+API → Order → Inventory → Redis
+
+Topology D:
+API → Order → Kafka → Notification
+
+Topology E:
+microservice mesh with multiple databases and queues
+
+Randomize topology size and structure.
+
+==================================================
+4. INCIDENT TYPES
+==================================================
+
+Create multiple root-cause categories.
+
+At minimum:
+
+1. CPU saturation
+2. Memory exhaustion
+3. Disk exhaustion
+4. Network latency
+5. Packet loss
+6. Database connection exhaustion
+7. Database slow queries
+8. Database outage
+9. Redis failure
+10. Kafka broker failure
+11. Message queue backlog
+12. Service crash
+13. Container restart loop
+14. Kubernetes pod failure
+15. Kubernetes node failure
+16. Deployment bug
+17. Configuration error
+18. Authentication failure
+19. DNS failure
+20. Load balancer failure
+21. API rate limiting
+22. Dependency timeout
+23. Memory leak
+24. Traffic spike
+25. Deadlock
+26. Storage failure
+27. Certificate expiration
+28. External API failure
+
+Each incident must have:
+
+- incident_id
+- root_cause_id
+- root_cause_type
+- root_cause_node
+- start_time
+- detection_time
+- end_time
+- severity
+- blast_radius
+- propagation_depth
+- affected_services
+- affected_nodes
+- remediation_action
+
+==================================================
+5. FAILURE PROPAGATION
+==================================================
+
+This is extremely important.
+
+The generator must simulate causal propagation through the dependency graph.
+
+Example:
+
+Database becomes unavailable.
+
+Database failure
+↓
+Connection failures
+↓
+Payment service latency increases
+↓
+Order service latency increases
+↓
+API errors increase
+↓
+User requests fail
+↓
+Alerts appear
+
+The dataset must preserve this temporal relationship.
+
+For each affected node generate:
+
+- failure_start_time
+- failure_end_time
+- propagation_delay
+- parent_failure_node
+- propagation_level
+
+The root cause must be identifiable through graph + temporal relationships.
+
+==================================================
+6. METRICS
+==================================================
+
+Generate time-series infrastructure metrics.
+
+At minimum:
+
+CPU:
+- cpu_usage_percent
+
+Memory:
+- memory_usage_percent
+- memory_available_mb
+
+Disk:
+- disk_usage_percent
+- disk_io_wait
+
+Network:
+- network_latency_ms
+- packet_loss_percent
+- network_throughput_mbps
+
+Application:
+- request_rate
+- response_time_ms
+- error_rate_percent
+- http_5xx_rate
+- http_4xx_rate
+
+Database:
+- active_connections
+- connection_pool_usage
+- query_latency_ms
+- slow_query_count
+- transactions_per_second
+
+Kafka:
+- consumer_lag
+- producer_rate
+- broker_cpu
+
+Kubernetes:
+- pod_restart_count
+- pod_cpu
+- pod_memory
+- node_cpu
+- node_memory
+
+Generate normal behavior using realistic distributions.
+
+Then inject anomalies based on the incident type.
+
+Example:
+
+CPU saturation:
+
+normal:
+40-65%
+
+incident:
+70 → 80 → 90 → 98%
+
+But do NOT make every CPU incident follow exactly this pattern.
+
+Add:
+
+- Gaussian noise
+- seasonal patterns
+- trends
+- random spikes
+- missing values
+- delayed measurements
+- sensor noise
+
+==================================================
+7. LOG GENERATION
+==================================================
+
+Generate realistic structured and semi-structured logs.
+
+Fields:
+
+- timestamp
+- log_id
+- node_id
+- service_name
+- log_level
+- event_type
+- message
+- error_code
+- request_id
+- trace_id
+- incident_id
+
+Log levels:
+
+DEBUG
+INFO
+WARN
+ERROR
+CRITICAL
+
+Generate normal logs as well as failure logs.
+
+IMPORTANT:
+
+Do not put the root cause directly inside every log message.
+
+BAD:
+
+"ROOT CAUSE: database failure"
+
+GOOD:
+
+"connection pool exhausted"
+"timeout waiting for database connection"
+"query exceeded timeout"
+"request failed after 3 retries"
+
+The model should infer the root cause from multiple observations.
+
+Generate linguistic variation.
+
+For example, the same event can appear as:
+
+"database connection timeout"
+"DB connection timed out"
+"connection acquisition exceeded timeout"
+"unable to obtain DB connection"
+
+==================================================
+8. DISTRIBUTED TRACES
+==================================================
+
+Generate request traces.
+
+Fields:
+
+- trace_id
+- span_id
+- parent_span_id
+- service_name
+- operation
+- start_time
+- duration_ms
+- status
+- error
+- dependency
+
+Example:
+
+trace_001
+
+API
+ ↓
+Order Service
+ ↓
+Payment Service
+ ↓
+PostgreSQL
+
+Generate realistic latency propagation.
+
+If PostgreSQL becomes slow:
+
+PostgreSQL latency
+→ Payment latency
+→ Order latency
+→ API latency
+
+Do not directly label every span with the root cause.
+
+==================================================
+9. ALERTS
+==================================================
+
+Generate alerts from metric/log/trace conditions.
+
+Fields:
+
+- alert_id
+- timestamp
+- alert_type
+- source_node
+- service_name
+- severity
+- metric
+- observed_value
+- threshold
+- alert_message
+- incident_id
+
+Generate:
+
+- true alerts
+- duplicate alerts
+- correlated alerts
+- false positives
+- noisy alerts
+- delayed alerts
+
+This is important because the ML model must learn incident correlation.
+
+==================================================
+10. INCIDENT CORRELATION DATASET
+==================================================
+
+Create a dataset where multiple alerts belong to one incident.
+
+Example:
+
+Incident 1001:
+
+Alert 1:
+API latency high
+
+Alert 2:
+Order service latency high
+
+Alert 3:
+Payment timeout
+
+Alert 4:
+Database query latency high
+
+Alert 5:
+Database connections exhausted
+
+The model should learn that these alerts are correlated.
+
+Generate:
+
+- same-incident alert groups
+- unrelated alerts occurring close in time
+- overlapping incidents
+- simultaneous incidents
+- cascading failures
+- unrelated noise
+
+==================================================
+11. ROOT CAUSE LABELS
+==================================================
+
+Every incident must have a ground-truth root cause.
+
+Example:
+
+root_cause_node = db_07
+root_cause_type = database_connection_exhaustion
+
+But do NOT expose this information directly in the observable features.
+
+Create separate ground-truth files.
+
+==================================================
+12. GRAPH DATA
+==================================================
+
+Export the dependency graph in multiple formats.
+
+Generate:
+
+topology_nodes.csv
+topology_edges.csv
+
+Also export:
+
+graph.json
+
+Each graph edge should contain:
+
+source
+target
+dependency_type
+latency
+criticality
+
+Dependency types:
+
+- HTTP
+- TCP
+- DATABASE
+- CACHE
+- MESSAGE_QUEUE
+- STORAGE
+- DNS
+
+The graph must be usable later by:
+
+- NetworkX
+- Neo4j
+- Graph Neural Networks
+
+==================================================
+13. REMEDIATION DATA
+==================================================
+
+For each incident generate possible remediation actions.
+
+Examples:
+
+CPU saturation:
+- scale_out_service
+- restart_container
+- increase_cpu_limit
+
+Memory leak:
+- restart_service
+- increase_memory
+- rollback_deployment
+
+Database connection exhaustion:
+- increase_connection_pool
+- restart_application
+- scale_database
+
+Kafka backlog:
+- increase_consumers
+- scale_brokers
+- restart_consumer
+
+Deployment bug:
+- rollback_deployment
+
+Each incident must have:
+
+recommended_action
+alternative_actions
+action_success_probability
+estimated_recovery_time
+
+The recommended action should depend on the root cause.
+
+==================================================
+14. DATASET FILES
+==================================================
+
+Generate:
+
+data/
+│
+├── raw/
+│   ├── metrics.csv
+│   ├── logs.jsonl
+│   ├── traces.csv
+│   ├── alerts.csv
+│   ├── incidents.csv
+│   ├── nodes.csv
+│   └── edges.csv
+│
+├── processed/
+│   ├── incident_correlation.csv
+│   ├── root_cause.csv
+│   ├── remediation.csv
+│   └── time_series.parquet
+│
+└── graph/
+    ├── graph.json
+    ├── nodes.csv
+    └── edges.csv
+
+==================================================
+15. MACHINE LEARNING DATA SPLITTING
+==================================================
+
+VERY IMPORTANT.
+
+Do not randomly split individual rows only.
+
+Prevent data leakage.
+
+Create:
+
+train/
+validation/
+test/
+
+Use scenario-level splitting.
+
+No incident from the same scenario/topology should appear in both train and test.
+
+Also create a HARD TEST SET.
+
+The hard test set should contain:
+
+- unseen topology
+- unseen root-cause/topology combinations
+- different propagation depths
+- different service counts
+- higher noise
+- missing metrics
+- delayed logs
+- overlapping incidents
+
+The purpose is to test whether the ML model learned general causal patterns instead of memorizing templates.
+
+==================================================
+16. ANTI-MEMORIZATION REQUIREMENTS
+==================================================
+
+This is one of the most important requirements.
+
+The generated dataset must NOT be deterministic in structure.
+
+Vary:
+
+- service names
+- topology
+- number of nodes
+- number of services
+- dependency types
+- root cause
+- incident duration
+- propagation delay
+- severity
+- metric baselines
+- noise
+- log wording
+- alert thresholds
+- traffic patterns
+- failure combinations
+
+Use parameterized distributions rather than fixed values.
+
+Do not create rules such as:
+
+"CPU > 90 always means CPU saturation."
+
+A CPU spike may also occur during:
+
+- traffic spike
+- memory pressure
+- deployment
+- unrelated load
+
+Similarly:
+
+"database latency high" should not always mean database failure.
+
+Sometimes it should be caused by:
+
+- network latency
+- CPU contention
+- connection exhaustion
+- downstream service overload
+
+==================================================
+17. NEGATIVE EXAMPLES
+==================================================
+
+Generate hard negative samples.
+
+Examples:
+
+High CPU but no incident.
+
+High database latency caused by network problems.
+
+High API latency caused by downstream payment service.
+
+Multiple alerts that look related but belong to different incidents.
+
+A database alert occurring at the same time as an unrelated Kubernetes failure.
+
+These examples are essential for ML generalization.
+
+==================================================
+18. MULTI-INCIDENT SCENARIOS
+==================================================
+
+Generate scenarios containing:
+
+- one incident
+- two simultaneous incidents
+- overlapping incidents
+- cascading incidents
+
+Example:
+
+Incident A:
+Redis failure
+
+Incident B:
+Network packet loss
+
+Both happen within the same 5-minute window.
+
+The model should learn to separate them.
+
+==================================================
+19. MISSING DATA
+==================================================
+
+Randomly remove:
+
+- metrics
+- logs
+- traces
+- alerts
+
+Use realistic missingness.
+
+Examples:
+
+5% missing metrics
+3% missing logs
+10% delayed telemetry
+
+Make missingness configurable.
+
+==================================================
+20. DATA QUALITY VALIDATION
+==================================================
+
+Create dataset_validator.py.
+
+It must check:
+
+- duplicate IDs
+- missing required columns
+- invalid timestamps
+- impossible metric values
+- orphan graph nodes
+- invalid graph edges
+- incidents with no root cause
+- incidents with no affected nodes
+- broken trace parent relationships
+- broken incident-alert relationships
+- train/test leakage
+- class imbalance
+- excessive duplicate records
+
+Print a complete validation report.
+
+==================================================
+21. CLASS BALANCE
+==================================================
+
+Do not blindly make all root causes equally frequent.
+
+Use configurable realistic distributions.
+
+However, prevent extreme class imbalance.
+
+Print:
+
+root cause distribution
+severity distribution
+service distribution
+incident frequency
+remediation distribution
+
+==================================================
+22. CONFIGURATION
+==================================================
+
+Create config.yaml containing parameters such as:
+
+random_seed: 42
+
+num_scenarios: 10000
+
+train_ratio: 0.70
+validation_ratio: 0.15
+test_ratio: 0.15
+
+min_services: 8
+max_services: 50
+
+metric_interval_seconds: 10
+
+missing_metric_probability: 0.05
+
+noise_level: 0.10
+
+incident_probability: 0.30
+
+multi_incident_probability: 0.15
+
+Store all important generation parameters here.
+
+==================================================
+23. REPRODUCIBILITY
+==================================================
+
+Running:
+
+python generate_dataset.py
+
+with the same seed must produce the same dataset.
+
+Allow:
+
+python generate_dataset.py --seed 123
+
+to generate a different dataset.
+
+Also allow:
+
+python generate_dataset.py --scenarios 50000
+
+==================================================
+24. PERFORMANCE
+==================================================
+
+The generator must be able to generate at least:
+
+10,000 scenarios
+
+without requiring excessive memory.
+
+Use:
+
+- streaming JSONL
+- Parquet
+- batch processing
+- multiprocessing where beneficial
+
+Do not hold every raw log in memory unnecessarily.
+
+==================================================
+25. DATA SCHEMA DOCUMENTATION
+==================================================
+
+README.md must explain:
+
+1. Project purpose
+2. Architecture
+3. Dataset generation process
+4. Every dataset file
+5. Every column
+6. Incident types
+7. Root causes
+8. Failure propagation
+9. Graph structure
+10. Train/validation/test strategy
+11. Leakage prevention
+12. Anti-memorization strategy
+13. How to run the generator
+14. Example generated records
+15. How to import graph into Neo4j
+16. How the dataset can later be used for ML/GNN training
+
+==================================================
+26. IMPORTANT DESIGN PRINCIPLE
+==================================================
+
+Separate:
+
+OBSERVATIONS
+
+from:
+
+GROUND TRUTH
+
+Observations include:
+
+- metrics
+- logs
+- traces
+- alerts
+
+Ground truth includes:
+
+- root cause
+- propagation path
+- incident ID
+- affected nodes
+- remediation
+
+The ML model should NOT receive ground truth during inference.
+
+==================================================
+27. FUTURE ML COMPATIBILITY
+==================================================
+
+Design the dataset so that I can later build:
+
+Model 1:
+Anomaly Detection
+
+Model 2:
+Incident Correlation
+
+Model 3:
+Root Cause Classification
+
+Model 4:
+Graph-based Root Cause Analysis
+
+Model 5:
+Failure Propagation Prediction
+
+Model 6:
+Remediation Recommendation
+
+The graph representation must be compatible with future:
+
+- GNN
+- GraphSAGE
+- GAT
+- GCN
+- temporal GNN
+
+==================================================
+28. OUTPUT REQUIREMENT
+==================================================
+
+Generate the COMPLETE project code.
+
+For every file:
+
+1. Show the filename.
+2. Provide complete Python code.
+3. Ensure imports are correct.
+4. Ensure functions/classes are actually connected.
+5. Ensure the project runs from the root directory.
+6. Do not provide pseudocode.
+7. Do not skip files.
+8. Do not use TODO.
+9. Do not simplify the causal simulation.
+10. Do not generate toy examples.
+
+After generating all files, explain:
+
+- execution order
+- command to install dependencies
+- command to generate 10,000 scenarios
+- command to validate the dataset
+- expected output files
+- approximate number of records
+- how to inspect the generated graph
+
+Finally, perform a consistency review of the generated code and identify any possible bugs before presenting the final version.
